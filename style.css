@@ -7,8 +7,14 @@
 }
 .grid-square{
     background-color: black;
-    transform: scale(.99);
 }
 .active{
     background-color: aqua;
+}
+.size-choice{
+    width: 10rem;
+    height: 3rem;
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
 }
