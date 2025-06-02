@@ -1,3 +1,7 @@
+body{
+    display: flex;
+    flex-direction: row;
+}
 .grid-container{
     display: flex;
     height: 960px;
@@ -5,16 +9,21 @@
     flex-wrap: wrap;
     margin: 0 auto;
 }
+.game-options-container{
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 0;
+    gap: 2rem;
+}
+
 .grid-square{
     background-color: black;
 }
 .active{
     background-color: aqua;
 }
-.size-choice{
+.size-choice, .reset-grid{
     width: 10rem;
     height: 3rem;
-    position: absolute;
-    top: 2rem;
-    left: 1rem;
+    padding: 1rem;
 }

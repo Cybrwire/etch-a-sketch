@@ -19,8 +19,6 @@ function drawPixels(){
     document.querySelectorAll('.grid-square').forEach(square => {
         square.addEventListener('mouseover', (e)=>{
             e.target.classList.add('active');
-        }, {
-            once: true
         })
     })
 }
@@ -32,5 +30,9 @@ function changeSize(){
     while(input > 100 || input < 1)
     setGrid(input);
 }
-
+function resetGrid(){
+    document.querySelectorAll('.grid-square').forEach(square => {
+        square.classList.remove('active');
+    })
+}
 setGrid();
